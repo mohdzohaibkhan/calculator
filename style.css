@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins SemiBold ,'Courier New', Courier, monospace;
+}
+.body-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100lvh;
+}
+.main-container
+{
+    width: 300px;
+    height: 550px;
+    background-color: #99E;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px black ;
+}
+.screen-container
+{
+    height: 35%;
+}
+.calc-text
+{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.screen-text
+{
+    font-size: 50px;
+    color: white;
+    text-align: end;
+    position: relative;
+    top: 40px;
+    overflow: auto;
+    width: 270px;
+}
+.screen-text::-webkit-scrollbar{
+    display: none;
+}
+.container-of-button
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-btn-container
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+#btn-space{
+    grid-column: 2 / 4;
+    width: 120px;
+}
+#btn-space-equal{
+    grid-column: 3 / 5;
+    width: 120px;
+}
+.calc-btn{
+    height: 55px;
+    width: 55px;
+    background-color: rgb(119, 119, 211);
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black ;
+}
+.calc-btn:hover{
+    scale: 1.03;
+    cursor: pointer;
+}
